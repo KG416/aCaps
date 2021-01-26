@@ -21,7 +21,14 @@ const questionsArr = [
         correctAnswers: ['kigali', 'kiglai'],
         flagURL: 'img/flags/rwanda.png',
         nr: 3,
-    }
+    },
+    {
+        country: 'Algeria',
+        capitalName: 'Algiers',
+        correctAnswers: ['algiers', 'alger'],
+        flagURL: 'img/flags/algeria.png',
+        nr: 4,
+    },
 ];
 
 //This value increases with 1 when user press next-btn
