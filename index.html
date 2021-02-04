@@ -8,29 +8,45 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a71ac1579c.js" crossorigin="anonymous"></script>
-    
+
     <title>African Capitals Quiz</title>
 
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
-   
+
     <!-- JS script -->
-    <script src="script.js" defer></script> 
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="quiz-wrap">
         <h1>African Capitals Quiz</h1>
-        <ul class="info">
-            <li>1. Write the capital</li>
-            <li>2. Press <b>"Check answer"</b></li>
-        </ul>
+
+        <div class="info-wrap">
+
+            <div class="info-card">
+                <p>Question</p>
+                <p class="info-question"></p>
+            </div>
+
+            <div class="info-card">
+                <p>Questions left</p>
+                <p class="info-questions-left"></p>
+            </div>
+
+            <div class="info-card">
+                <p>Current Score</p>
+                <p class="info-score"></p>
+            </div>
+
+        </div>
+
         <h3>Whats the capital of?</h3>
 
-        <img class="flag" src="img/flags/egypt.png" alt="Flag of egypt">
+        <img class="flag" src="img/flags/egypt.png" alt="Flag">
 
-        <input class='answer-input' type="text" placeholder="Egypt">
-        
+        <input class='answer-input' type="text" placeholder="Egypt" autofocus>
+
         <div class="correct-message"></div>
         <div class="wrong-message"></div>
 
