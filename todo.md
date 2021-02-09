@@ -1,20 +1,16 @@
 PRIO
 =======================================================
+- Gör readMe snygg och lägg upp på GitHub
 
-- Gör välkomst-meddelande
+STRÖSSEL
+=======================================================
+- Koppla 'START GAME' till enter (välkomst-meddelande)
 
 - Kan func answerFeedback skrivas smartare?
 
 - Gör så att ordningen på frågorna är slumpmässig
 
-STRÖSSEL
-=======================================================
-- Gör readMe snygg och lägg upp på GitHub
-
 - Lägg data i separat js-fil
-
-
-
 
 
 

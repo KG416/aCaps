@@ -1,6 +1,6 @@
 *{
     font-family: 'Comfortaa', cursive;
-    list-style: none;
+    /* list-style: none; */
     padding-inline-start: 0;
 
     color: white;
@@ -33,6 +33,61 @@ h1{
 h3{
     font-size: 22px;
 }
+li{
+    margin: 1.5em;
+}
+.rulesHeader{
+    text-decoration: underline;
+}
+.welcomeMsg{
+    display: block;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    min-height: 60vh;
+    min-width: 40vw;
+    padding: 0.7em;
+    margin: 1em;
+    /* padding-top: 300px; */
+  
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(33, 33, 33), rgb(53, 53, 53));
+
+    position: absolute;
+    z-index: 2;
+}
+/* .welcomeImage{
+
+height: 100%;
+width: 100%;
+z-index: -1;
+} */
+.welcomeMsg > button {
+    align-self: center;
+}
+.finishedMsg{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    display: none;
+
+    min-height: 60vh;
+    min-width: 40vw;
+    padding: 0.7em;
+    margin: 1em;
+    /* padding-top: 300px; */
+  
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(33, 33, 33), rgb(53, 53, 53));
+
+    position: absolute;
+    z-index: 2;
+}
 .quiz-wrap{
     display: flex;
     flex-direction: column;
@@ -44,8 +99,9 @@ h3{
     margin: 0.7em;
     padding: 0.7em;
     border-radius: 10px;
-
     background-image: linear-gradient(rgb(33, 33, 33), rgb(53, 53, 53));
+
+    position: relative;
 }
 .flag{
     max-width: 200px;
@@ -118,6 +174,9 @@ p {
 */
 
 @media(max-width:650px){
+    .welcomeMsg {
+        height: 85vh;
+    }
     .quiz-wrap{
         height: 85vh;
     }

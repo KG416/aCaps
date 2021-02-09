@@ -141,13 +141,246 @@ const questionsArr = [
         flagURL: 'img/flags/cameroon.png',
         nr: 20,
     },
+    {
+        country: 'Burkina Faso',
+        capitalName: "Ouagadougou",
+        correctAnswers: ["ouagadougou", "wagadogo", "ouagadogo", "ouagadougo",],
+        flagURL: 'img/flags/burkinaFaso.png',
+        nr: 21,
+    },
+    {
+        country: 'Niger',
+        capitalName: "Niamey",
+        correctAnswers: ["niamey", "niamej", "njamey", "niamay",],
+        flagURL: 'img/flags/niger.png',
+        nr: 22,
+    },
+    {
+        country: 'Malawai',
+        capitalName: "Lilongwe",
+        correctAnswers: ["lilongwe", "lilonge", "lilongwey", "lilongwy",],
+        flagURL: 'img/flags/malawi.png',
+        nr: 23,
+    },
+    {
+        country: 'Zambia',
+        capitalName: "Lusaka",
+        correctAnswers: ["lusaka", "lussaka", "losaka",],
+        flagURL: 'img/flags/zambia.png',
+        nr: 24,
+    },
+    {
+        country: 'Mali',
+        capitalName: "Bamako",
+        correctAnswers: ["bamako", "bamaku", "bamakou",],
+        flagURL: 'img/flags/mali.png',
+        nr: 25,
+    },
+    {
+        country: 'Senegal',
+        capitalName: "Dakar",
+        correctAnswers: ["dakar", "dhakar", "dakhar",],
+        flagURL: 'img/flags/senegal.png',
+        nr: 26,
+    },
+    {
+        country: 'Zimbabwe',
+        capitalName: "Harare",
+        correctAnswers: ["harare", "hararey", "harrare",],
+        flagURL: 'img/flags/zimbabwe.png',
+        nr: 27,
+    },
+    {
+        country: 'Tunisia',
+        capitalName: "Tunis",
+        correctAnswers: ["tunis", "tuniz"],
+        flagURL: 'img/flags/tunisia.png',
+        nr: 28,
+    },
+    {
+        country: 'Guinea',
+        capitalName: "Conakry",
+        correctAnswers: ["conakry", "konakry", "conacry", "conakrey"],
+        flagURL: 'img/flags/guinea.png',
+        nr: 29,
+    },
+    {
+        country: 'Benin',
+        capitalName: "Porto-Novo",
+        correctAnswers: ["porto-novo", "portonovo", "porto novo", "port novo", "port-novo"],
+        flagURL: 'img/flags/benin.png',
+        nr: 30,
+    },
+    {
+        country: 'Burundi',
+        capitalName: "Gitega or Bujumbura",
+        correctAnswers: ["bujumbura", "bujumbora", "gitega", "gittega"],
+        flagURL: 'img/flags/burundi.png',
+        nr: 31,
+    },
+    {
+        country: 'South Sudan',
+        capitalName: "Juba",
+        correctAnswers: ["juba", "joba"],
+        flagURL: 'img/flags/southSudan.png',
+        nr: 32,
+    },
+    {
+        country: 'Eritrea',
+        capitalName: "Asmara",
+        correctAnswers: ["asmara", "assmara", "asmarra"],
+        flagURL: 'img/flags/eritrea.png',
+        nr: 33,
+    },
+    {
+        country: 'Sierra Leone',
+        capitalName: "Freetown",
+        correctAnswers: ["freetown", "fretown"],
+        flagURL: 'img/flags/sierraLeone.png',
+        nr: 34,
+    },
+    {
+        country: 'Togo',
+        capitalName: "Lomé",
+        correctAnswers: ["lomé", "lome", "lume"],
+        flagURL: 'img/flags/togo.png',
+        nr: 35,
+    },
+    {
+        country: 'Libya',
+        capitalName: "Tripoli",
+        correctAnswers: ["tripoli", "trippoli", "tripolli", "tripoly", "trippolli"],
+        flagURL: 'img/flags/libya.png',
+        nr: 36,
+    },
+    {
+        country: 'Central African Republic',
+        capitalName: "Bangui",
+        correctAnswers: ["bangui", "bangi", "banguy"],
+        flagURL: 'img/flags/centralAfricanRepublic.png',
+        nr: 37,
+    },
+    {
+        country: 'Mauritania',
+        capitalName: "Nouakchott",
+        correctAnswers: ["nouakchott", "nouakchot", "noakchott", "noakchot"],
+        flagURL: 'img/flags/mauritania.png',
+        nr: 38,
+    },
+    {
+        country: 'Liberia',
+        capitalName: "Monrovia",
+        correctAnswers: ["monrovia", "monrovja", "monrouvia"],
+        flagURL: 'img/flags/liberia.png',
+        nr: 39,
+    },
+    {
+        country: 'Namibia',
+        capitalName: "Windhoek",
+        correctAnswers: ["windhoek", "windoek", "whindoek", "windohek"],
+        flagURL: 'img/flags/namibia.png',
+        nr: 40,
+    },
+    {
+        country: 'Botswana',
+        capitalName: "Gaborone",
+        correctAnswers: ["gaborone", "gabborone", "gaborrone"],
+        flagURL: 'img/flags/botswana.png',
+        nr: 41,
+    },
+    {
+        country: 'Lesotho',
+        capitalName: "Maseru",
+        correctAnswers: ["maseru", "masseru", "maseur"],
+        flagURL: 'img/flags/lesotho.png',
+        nr: 42,
+    },
+    {
+        country: 'The Gambia',
+        capitalName: "Banjul",
+        correctAnswers: ["banjul", "bannjul", "banjol"],
+        flagURL: 'img/flags/theGambia.png',
+        nr: 43,
+    },
+    {
+        country: 'Gabon',
+        capitalName: "Libreville",
+        correctAnswers: ["libreville", "librevile", "liberville"],
+        flagURL: 'img/flags/gabon.png',
+        nr: 44,
+    },
+    {
+        country: 'Guinea-Bissau',
+        capitalName: "Bissau",
+        correctAnswers: ["bissau", "bisau", "bissao", "bisao"],
+        flagURL: 'img/flags/guinea-bissau.png',
+        nr: 45,
+    },
+    {
+        country: 'Mauritius',
+        capitalName: "Port Louis",
+        correctAnswers: ["port louis", "portlouis", "port-louis", "port louise", "port-louise",
+            "port-louise", "portlouise", "port lois"],
+        flagURL: 'img/flags/mauritius.png',
+        nr: 46,
+    },
+    {
+        country: 'Equatorial Guinea',
+        capitalName: "Malabo",
+        correctAnswers: ["malabo", "mallabo", "malaboo", "malabu"],
+        flagURL: 'img/flags/equatorialGuinea.png',
+        nr: 47,
+    },
+    {
+        country: 'Eswatini',
+        capitalName: "Mbabane",
+        correctAnswers: ["mababane", "mbabanne", "embabane"],
+        flagURL: 'img/flags/eswatini.png',
+        nr: 48,
+    },
+    {
+        country: 'Djibouti',
+        capitalName: "Djibouti",
+        correctAnswers: ["djibouti", "jibouti", "djiboti", "jiboti"],
+        flagURL: 'img/flags/djibouti.png',
+        nr: 49,
+    },
+    {
+        country: 'Comoros',
+        capitalName: "Moroni",
+        correctAnswers: ["moroni", "morroni", "moronni"],
+        flagURL: 'img/flags/comoros.png',
+        nr: 50,
+    },
+    {
+        country: 'Cape Verde',
+        capitalName: "Praia",
+        correctAnswers: ["praia", "praya", "praja"],
+        flagURL: 'img/flags/capeVerde.png',
+        nr: 51,
+    },
+    {
+        country: 'São Tomé and Príncipe',
+        capitalName: "São Tomé",
+        correctAnswers: ["são tomé", "sao tome", "sao tomé", "são tome", "sao-tome", "saotome"],
+        flagURL: 'img/flags/saoTomeAndPrincipe.png',
+        nr: 52,
+    },
+    {
+        country: 'Seychelles',
+        capitalName: "Victoria",
+        correctAnswers: ["victoria", "viktoria", "wictoria"],
+        flagURL: 'img/flags/seychelles.png',
+        nr: 53,
+    },
+    {
+        country: 'Republic of the Congo',
+        capitalName: "Brazzaville",
+        correctAnswers: ["brazzaville", "brazaville", "brazavile", "brassaville"],
+        flagURL: 'img/flags/republicOfTheCongo.png',
+        nr: 54,
+    },
 ];
-
-
-
-
-
-
 
 
 
@@ -187,12 +420,16 @@ let isCorrect = false;
    =================
 */
 
+const welcomeMsg = document.querySelector('.welcomeMsg');
+const hideWelcomeBtn = document.querySelector('.hideWelcomeBtn');
+
 const doneBtn = document.querySelector('.check-btn');
 const nextBtn = document.querySelector('.next-btn');
 const answerInput = document.querySelector('.answer-input');
 const correctMsg = document.querySelector('.correct-message');
 const wrongMsg = document.querySelector('.wrong-message');
 const currentFlag = document.querySelector('.flag');
+
 const infoScore = document.querySelector('.info-score');
 const infoQuestion = document.querySelector('.info-question');
 const infoQuestionsLeft = document.querySelector('.info-questions-left');
@@ -262,6 +499,12 @@ nextBtn.addEventListener('click', nextQuestion)
    =================
 */
 
+function hideWelcomeMsg() {
+    welcomeMsg.style.display = 'none'
+    //Focus on answerInput
+    answerInput.focus();
+}
+
 function checkAnswer() {
     //Remove whitespace + make answer lower case
     let currentAnswer = answerInput.value.trim().toLowerCase();
@@ -272,6 +515,8 @@ function checkAnswer() {
 }
 
 function answerFeedback(answer) {
+
+
 
     for (let i = 0; i < questionsArr[questionsArrIndex].correctAnswers.length; i++) {
         if (answer === questionsArr[questionsArrIndex].correctAnswers[i]) {
@@ -292,11 +537,19 @@ function resultMessage() {
         wrongMsg.innerHTML = `Wrong, the capital of ${currentCountry} is <b> ${currentCapital}<b/>.`;
     }
 
-    //Hide check-btn
-    doneBtn.style.display = 'none';
+    if (questionsArrIndex === 54) {
+        //Hide check-btn
+        doneBtn.style.display = 'none';
 
-    //Show next-btn
-    nextBtn.style.display = 'inline';
+
+    } else {
+
+        //Hide check-btn
+        doneBtn.style.display = 'none';
+
+        //Show next-btn
+        nextBtn.style.display = 'inline';
+    }
 };
 
 function nextQuestion() {
