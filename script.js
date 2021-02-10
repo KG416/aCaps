@@ -519,7 +519,6 @@ function hideWelcomeMsg() {
 function checkAnswer() {
     //Remove whitespace + make answer lower case
     let currentAnswer = answerInput.value.trim().toLowerCase();
-    console.log('currentAnswer = ' + currentAnswer);
 
     //Kollar om svaret stämmer + kör resultMessage();
     answerFeedback(currentAnswer);
@@ -585,9 +584,6 @@ function nextQuestion() {
     questionsArrIndex++;
     currentCountry = questionsArr[questionsArrIndex].country;
     currentCapital = questionsArr[questionsArrIndex].capitalName;
-
-    console.log('Current country is ' + currentCountry);
-    console.log('questionsArrIndex is now ' + questionsArrIndex);
 
     //Hide next-btn
     nextBtn.style.display = 'none';
