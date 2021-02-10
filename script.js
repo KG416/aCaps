@@ -334,7 +334,7 @@ const questionsArr = [
     {
         country: 'Eswatini',
         capitalName: "Mbabane",
-        correctAnswers: ["mababane", "mbabanne", "embabane"],
+        correctAnswers: ["mbabane", "mbabanne", "embabane"],
         flagURL: 'img/flags/eswatini.png',
         nr: 48,
     },
@@ -385,7 +385,7 @@ const questionsArr = [
 
 
 /* =================
-    INITIAL VALUES start
+    INITIAL VALUES + VARIABLES start
    =================
 */
 
@@ -395,6 +395,9 @@ let questionsArrIndex = 0;
 //1 is added per correct answer
 let score = 0;
 
+//1 is added per wrong answer
+let wrong = 0;
+
 //Give initial value to these. Change to empty str or something, if you make order random later
 let currentCountry = questionsArr[questionsArrIndex].country;
 let currentCapital = questionsArr[questionsArrIndex].capitalName;
@@ -403,7 +406,7 @@ let currentCapital = questionsArr[questionsArrIndex].capitalName;
 let isCorrect = false;
 
 /* =================
-    INITIAL VALUES end
+    INITIAL VALUES + VARIABLES end
    =================
 */
 
@@ -423,21 +426,29 @@ let isCorrect = false;
 const welcomeMsg = document.querySelector('.welcomeMsg');
 const hideWelcomeBtn = document.querySelector('.hideWelcomeBtn');
 
-const doneBtn = document.querySelector('.check-btn');
+const checkBtn = document.querySelector('.check-btn');
 const nextBtn = document.querySelector('.next-btn');
 const answerInput = document.querySelector('.answer-input');
 const correctMsg = document.querySelector('.correct-message');
 const wrongMsg = document.querySelector('.wrong-message');
 const currentFlag = document.querySelector('.flag');
 
-const infoScore = document.querySelector('.info-score');
 const infoQuestion = document.querySelector('.info-question');
 const infoQuestionsLeft = document.querySelector('.info-questions-left');
+const infoWrong = document.querySelector('.info-wrong');
+const infoRight = document.querySelector('.info-right');
+
+const finishedMsg = document.querySelector('.finishedMsg');
+const finalResult = document.querySelector('.finalResult');
+const startOverBtn = document.querySelector('.startOverBtn');
 
 /* =========== Some more initial values of variables ===========*/
 
+//Render 0 as current wrong
+infoWrong.innerHTML = wrong;
+
 //Render 0 as current score
-infoScore.innerHTML = score;
+infoRight.innerHTML = score;
 
 //Render 54 as questions left
 infoQuestionsLeft.innerHTML = '54';
@@ -466,7 +477,7 @@ answerInput.placeholder = currentCountry;
    =================
 */
 
-doneBtn.addEventListener('click', checkAnswer)
+checkBtn.addEventListener('click', checkAnswer)
 
 /* Enable enter-btn START */
 answerInput.addEventListener('keyup', event => {
@@ -481,7 +492,7 @@ answerInput.addEventListener('keyup', event => {
 /* Enable enter-btn END */
 
 nextBtn.addEventListener('click', nextQuestion)
-
+startOverBtn.addEventListener('click', startOverFunc)
 /* =================
     EVENT LISTENERS end
    =================
@@ -521,11 +532,12 @@ function answerFeedback(answer) {
     for (let i = 0; i < questionsArr[questionsArrIndex].correctAnswers.length; i++) {
         if (answer === questionsArr[questionsArrIndex].correctAnswers[i]) {
             isCorrect = true;
-            infoScore.innerHTML = score += 1;
+            infoRight.innerHTML = score += 1;
             resultMessage();
         }
     }
     if (isCorrect === false) {
+        infoWrong.innerHTML = wrong += 1;
         resultMessage();
     }
 }
@@ -537,15 +549,24 @@ function resultMessage() {
         wrongMsg.innerHTML = `Wrong, the capital of ${currentCountry} is <b> ${currentCapital}<b/>.`;
     }
 
-    if (questionsArrIndex === 54) {
+    if (questionsArrIndex === 53 && score === 1) {
         //Hide check-btn
-        doneBtn.style.display = 'none';
-
-
+        checkBtn.style.display = 'none';
+        //Show finishedMsg
+        finishedMsg.style.display = 'block';
+        //Display the score in final result
+        finalResult.innerHTML = `You got 1 point!`
+    } else if (questionsArrIndex === 53) {
+        //Hide check-btn
+        checkBtn.style.display = 'none';
+        //Show finishedMsg
+        finishedMsg.style.display = 'block';
+        //Display the score in final result
+        finalResult.innerHTML = `You got ${score} points!`
     } else {
 
         //Hide check-btn
-        doneBtn.style.display = 'none';
+        checkBtn.style.display = 'none';
 
         //Show next-btn
         nextBtn.style.display = 'inline';
@@ -572,7 +593,7 @@ function nextQuestion() {
     nextBtn.style.display = 'none';
 
     //Show check-btn
-    doneBtn.style.display = 'inline';
+    checkBtn.style.display = 'inline';
 
     //Remove answer message
     correctMsg.innerHTML = '';
@@ -590,6 +611,10 @@ function nextQuestion() {
     //Update the flag
     currentFlag.src = questionsArr[questionsArrIndex].flagURL;
 };
+
+function startOverFunc() {
+    location.reload();
+}
 
 /* =================
     FUNCTIONS end

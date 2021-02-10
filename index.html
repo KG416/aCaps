@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a71ac1579c.js" crossorigin="anonymous"></script>
 
@@ -34,10 +34,9 @@
 
     <div class="finishedMsg">
         <h2>Finished!</h2>
-        <p>bla bla bla</p>
-        <p>bla bla bla</p>
+        <p class="finalResult"></p>
 
-        <button>START OVER</button>
+        <button class="startOverBtn">START OVER</button>
     </div>
 
     <div class="quiz-wrap">
@@ -56,8 +55,13 @@
             </div>
 
             <div class="info-card">
-                <p>Current Score</p>
-                <p class="info-score"></p>
+                <p class="rightP">Correct answers</p>
+                <p class="info-right"></p>
+            </div>
+
+            <div class="info-card">
+                <p class="wrongP">Wrong answers</p>
+                <p class="info-wrong"></p>
             </div>
 
         </div>

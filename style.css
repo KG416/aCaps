@@ -71,13 +71,12 @@ z-index: -1;
 .finishedMsg{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+    text-align: center;
 
     display: none;
 
     min-height: 60vh;
-    min-width: 40vw;
+    min-width: 80vw;
     padding: 0.7em;
     margin: 1em;
     /* padding-top: 300px; */
@@ -148,10 +147,17 @@ button:hover{
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.info-question, .info-questions-left, .info-score{
+.info-question, .info-questions-left, .info-right, .info-wrong{
     font-size: 20px;
+}
+.rightP{
+    color: rgb(211, 255, 211);
+}
+.wrongP{
+    color: rgb(255, 174, 174);
 }
 p {
     margin: 0.2em;
@@ -203,6 +209,10 @@ p {
 
         width: 70vw;
         height: 7vh;
+    }
+    .finishedMsg{
+        height: 85vh;
+        width: 90vw;
     }
 }
 
