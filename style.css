@@ -1,8 +1,6 @@
 *{
     font-family: 'Comfortaa', cursive;
-    /* list-style: none; */
     padding-inline-start: 0;
-
     color: white;
 }
 
@@ -59,12 +57,6 @@ li{
     position: absolute;
     z-index: 2;
 }
-/* .welcomeImage{
-
-height: 100%;
-width: 100%;
-z-index: -1;
-} */
 .welcomeMsg > button {
     align-self: center;
 }
@@ -150,8 +142,8 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
-.info-question, .info-questions-left, .info-right, .info-wrong{
-    font-size: 20px;
+.info-card > * {
+    text-align: center;
 }
 .rightP{
     color: rgb(211, 255, 211);
@@ -164,37 +156,58 @@ p {
 }
 .correct-message{
     color: green;
-
     margin: 0.2em;
+    text-align: center;
 }
-
 .wrong-message{
     color: red;
-
     margin: 0.2em;
+    text-align: center;
 }
-
 /* =================
-    MOBILE SCREEN (iPhone X)
+    MOBILE SCREEN
    =================
 */
 
 @media(max-width:650px){
     .welcomeMsg {
-        height: 85vh;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
     }
     .quiz-wrap{
-        height: 85vh;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        height: 100vh;
+        width: 100vw;
     }
     h1{
-        font-size: 48px;
+        font-size: 7vw;
         text-align: center;
     }
-    .info{
-        font-size: 18px;
+    .info-wrap{
+        max-width: 95vw;
     }
+    .info-card{
+    font-size: 3vw;
+
+    background-color: var(--grey3);
+    border-radius: 10px;
+    padding: 3px;
+    margin: 2px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-question, .info-questions-left, .info-right, .info-wrong{
+    font-size: 5vw;
+}
     h3{
-        font-size: 30px;
+        font-size: 5vw;
     }
     .flag{
         max-width: 50vw;
@@ -205,45 +218,14 @@ p {
         border-radius: 10px;
     }
     button{
-        font-size: 18px;
+        font-size: 4vw;
 
         width: 70vw;
         height: 7vh;
+        margin-bottom: 10vh;
     }
     .finishedMsg{
-        height: 85vh;
-        width: 90vw;
-    }
-}
-
-/* =================
-    SMALL SCREEN (iPhone 5)
-   =================
-*/
-
-@media (max-width:400px){
-    .quiz-wrap{
-        width: 85vw;
-        height: 90vh;
-    }
-    h1{
-        font-size: 35px;
-        text-align: center;
-    }
-    .info{
-        font-size: 14px;
-    }
-    h3{
-        font-size: 27px;
-        text-align: center;
-    }
-    button{
-        font-size: 14px;
-
-        width: 80vw;
-        height: 7vh;
-
-        margin-bottom: 5vh;
-        padding: em;
+        height: 100vh;
+        width: 100vw;
     }
 }
